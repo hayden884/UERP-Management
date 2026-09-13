@@ -7,7 +7,8 @@ module.exports = {
     console.log(`✅ Logged in as ${client.user.tag}`);
 
     const commands = [
-      require('../commands/moderation/punishmentIssue').data.toJSON()
+      require('../commands/moderation/punishmentIssue').data.toJSON(),
+      require('../commands/moderation/dmSend').data.toJSON()
     ];
 
     const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
